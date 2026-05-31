@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ecd11e8751dd67ef",
+        "id": "c159ff6d1e2cf258",
         "type": "tabs",
         "children": [
           {
-            "id": "765bd288765a9e18",
+            "id": "a633053ce2b1dce3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "机器学习李宏毅/MATH：多元函数极值计算方法.md",
+                "file": "机器学习李宏毅/ADAM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MATH：多元函数极值计算方法"
+              "title": "ADAM"
             }
           }
         ]
@@ -94,7 +94,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": false,
+                "file": "机器学习李宏毅/ADAM.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "ADAM 的反向链接列表"
             }
           },
           {
@@ -154,20 +155,21 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "机器学习李宏毅/ADAM.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "ADAM 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,16 +182,35 @@
       "bases:新建数据库": false
     }
   },
-  "active": "765bd288765a9e18",
+  "active": "a633053ce2b1dce3",
   "lastOpenFiles": [
-    "img/A0000-0001.png",
+    "img/A0000/A0000-0010.png",
+    "img/A0000/A0000-0010.png.crdownload",
+    "机器学习李宏毅/Batch.md",
+    "机器学习李宏毅/ADAM.md",
     "机器学习李宏毅/正则化与早停.md",
     "机器学习李宏毅/数据集和过拟合.md",
-    "机器学习李宏毅/机器学习基本概念.md",
     "机器学习李宏毅/MATH：多元函数极值计算方法.md",
+    "img/A0000/A0000-0009.png",
+    "机器学习李宏毅/机器学习基本概念.md",
+    "img/A0000/A0000-0009.png.crdownload",
+    "img/A0000/A0000-0008.png",
+    "img/A0000/A0000-0008.png.crdownload",
+    "img/A0000/A0000-0007.png",
+    "img/A0000/A0000-0007.png.crdownload",
+    "img/A0000",
+    "img/A0000/A0000-0006.png",
+    "img/A0000-0006.png.crdownload",
+    "img/A0000/A0000-0005.png",
+    "img/A0000-0005.png.crdownload",
+    "img/A0000/A0000-0004.png",
+    "img/A0000-0004.png.crdownload",
+    "img/A0000/A0000-0003.png",
+    "img/A0000-0003.png.crdownload",
+    "img/A0000/A0000-0002.png",
+    "img/A0000-0002.png.crdownload",
+    "img/A0000/A0000-0001.png",
     "未命名.md",
-    "img",
-    "愿望单.md",
-    "机器学习李宏毅"
+    "愿望单.md"
   ]
 }
