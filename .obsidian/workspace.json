@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "愿望单.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "愿望单"
+              "title": "README"
             }
           }
         ]
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "愿望单.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "愿望单 的大纲"
+              "title": "README 的大纲"
             }
           }
         ],
@@ -184,6 +184,7 @@
   },
   "active": "a633053ce2b1dce3",
   "lastOpenFiles": [
+    "愿望单.md",
     "机器学习李宏毅/前向传播和反向传播.md",
     "机器学习李宏毅/机器学习基本概念.md",
     "机器学习李宏毅/正则化与早停.md",
@@ -212,7 +213,6 @@
     "_img/A0000/A0000-0004.png",
     "_img/A0000/A0000-0003.png",
     "_img/A0000/A0000-0002.png",
-    "未命名.md",
-    "愿望单.md"
+    "未命名.md"
   ]
 }
