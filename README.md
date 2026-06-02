@@ -1,5 +1,6 @@
 # Machine-Learning-Notes
 **注意**：`data/`存储的已经下载的数据集太大，我用`.gitignore`屏蔽了，首次运行代码时会**重新下载**，可能比较慢
+%%MNIST的数据集是在gitignore之前提交的，如果删除的话还要再提交两个pr,我实在懒，反正才81MB，不管了%%
 ### 笔记目录
 ```
 Machine-Learning-Notes/
