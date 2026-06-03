@@ -3,32 +3,36 @@
 ### 笔记目录
 ```
 Machine-Learning-Notes/
+├── .gitignore
 ├── LICENSE
 ├── README.md
 ├── 愿望单.md
-├── data/-----------------------------------[下载的数据集](已被.gitignore)
-├── _img/-----------------------------------[笔记中插入的图片]
-|
+├── 未命名.md
 ├── .obsidian/
-│   ├── app.json
-│   ├── appearance.json
-│   ├── core-plugins.json
-│   ├── hotkeys.json
-│   └── workspace.json
-|
+├── data/-----------------------------------[下载的数据集](已被.gitignore)
+│   ├── FashionMNIST/
+│   ├── MNIST/
+│   └── models/
+│       ├── model-CNN.pth
+│       └── model-DNN.pth
 ├── pytorch文档/
+│   ├── CNN.py
+│   ├── nn.model 常用模型及参数.md
 │   ├── optimizer 优化器.md
 │   └── quickly_star.py
-|
-├──tool/
-│   └── MNIST-test/--------------------------[手写MNIST测试文件]
-|
+├── tool/
+│   └── MNIST-test/--------------------------[手写MNIST测试文件,支持CNN/DNN]
+├── _img/-----------------------------------[笔记中插入的图片]
+│   ├── A0000/
+│   └── 原理图/
 └── 机器学习李宏毅/
     ├── ADAM.md
     ├── Batch.md
+    ├── CNN 卷积神经网络.md
     ├── MATH：多元函数极值计算方法.md
+    ├── Regression & Classification.md
     ├── 前向传播和反向传播.md
+    ├── 数据和模型如何影响过拟合的概率及减小方案.md
     ├── 数据集和过拟合.md
-    ├── 机器学习基本概念.md-------------------[入口文件]
-    └── 正则化与早停.md
+    └── 机器学习基本概念
 ```

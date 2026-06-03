@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "机器学习李宏毅/CNN 卷积神经网络.md",
+                "file": "愿望单.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CNN 卷积神经网络"
+              "title": "愿望单"
             }
           }
         ]
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "机器学习李宏毅/CNN 卷积神经网络.md",
+                "file": "愿望单.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "CNN 卷积神经网络 的大纲"
+              "title": "愿望单 的大纲"
             }
           }
         ],
@@ -184,11 +184,17 @@
   },
   "active": "7182a7166fb8e4d5",
   "lastOpenFiles": [
+    "README.md",
+    "未命名.md",
+    "pytorch文档/nn.model 常用模型及参数.md",
+    "data/models/model-CNN.pth",
+    "pytorch文档/CNN.py",
+    "pytorch文档/optimizer 优化器.md",
+    "机器学习李宏毅/CNN 卷积神经网络.md",
     "data/models/model-DNN.pth",
     "tool/MNIST-test/__pycache__/model.cpython-313.pyc",
     "tool/MNIST-test/__pycache__",
     "tool/MNIST-test/model.py",
-    "机器学习李宏毅/CNN 卷积神经网络.md",
     "机器学习李宏毅/Regression & Classification.md",
     "_img/A0000/A0000-0020.png",
     "Pasted image 20260603172732.png.md",
@@ -213,12 +219,6 @@
     "机器学习李宏毅/Batch.md",
     "_img/A0000/A0000-0013.png.crdownload",
     "_img/A0000/A0000-0012.png.crdownload",
-    "_img/A0000/A0000-0011.png.crdownload",
-    "data/MNIST/raw/train-labels-idx1-ubyte.gz",
-    "data/MNIST/raw/train-labels-idx1-ubyte",
-    "README.md",
-    "pytorch文档/optimizer 优化器.md",
-    "愿望单.md",
-    "未命名.md"
+    "愿望单.md"
   ]
 }

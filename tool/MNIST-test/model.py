@@ -20,7 +20,8 @@ class NeuralNetwork(nn.Module):
 		return logits
 
 
-MODEL_PATH = { "DNN": os.path.join("data", "models", "model-DNN.pth") }
+MODEL_PATH = {"DNN": os.path.join("data", "models", "model-DNN.pth"),
+			  "CNN": os.path.join("data", "models", "model-CNN.pth") }
 
 
 

@@ -7,12 +7,12 @@ import torch
 import torch.nn as nn
 from model import load_model
 
-MODELTYPE = "DNN" #模型类型，DNN或CNN，需与训练时一致
+MODELTYPE = "CNN" #模型类型，DNN或CNN，在加载模型时会根据这个参数加载对应的模型文件
 
 def nparr_to_tensor(img28):
 	# img28: 28x28 uint8, 0..255, background 0, stroke 255
 	arr = np.array(img28, dtype=np.float32) / 255.0
-	# ensure shape (1,1,28,28)
+	# ensure shape (1,1,28,28)``
 	t = torch.from_numpy(arr).unsqueeze(0).unsqueeze(0)
 	return t
 
