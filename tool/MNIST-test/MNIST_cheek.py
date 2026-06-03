@@ -1,15 +1,3 @@
-"""MNIST 手写数字绘图和检测 (Pygame)
-
-功能：
-- 用 28x28 网格绘制数字（可缩放显示）
-- 笔、橡皮、清空操作
-- 生成灰度图并进行模型推理（加载 ./data/models/model.pth）
-- 显示 0-9 的概率条形图
-
-用法：
-python MNIST_cheek.py
-"""
-
 import os
 import sys
 import pygame
@@ -17,46 +5,9 @@ import numpy as np
 from PIL import Image
 import torch
 import torch.nn as nn
+from model import load_model
 
-# 定义与训练时相同的模型结构以便加载 state_dict
-class NeuralNetwork(nn.Module):
-	def __init__(self):
-		super().__init__()
-		self.flatten = nn.Flatten()
-		self.linear_relu_stack = nn.Sequential(
-			nn.Linear(28*28, 512),
-			nn.ReLU(),
-			nn.Linear(512, 512),
-			nn.ReLU(),
-			nn.Linear(512, 10),
-		)
-
-	def forward(self, x):
-		x = self.flatten(x)
-		logits = self.linear_relu_stack(x)
-		return logits
-
-
-MODEL_PATH = os.path.join("..", "data", "models", "model.pth")
-LOCAL_MODEL_PATH = os.path.join("data", "models", "model.pth")
-if os.path.exists(LOCAL_MODEL_PATH):
-	MODEL_PATH = LOCAL_MODEL_PATH
-
-
-def load_model(device):
-	model = NeuralNetwork().to(device)
-	if os.path.exists(MODEL_PATH):
-		state = torch.load(MODEL_PATH, map_location=device)
-		try:
-			model.load_state_dict(state)
-			print("Loaded model state_dict from", MODEL_PATH)
-		except Exception as e:
-			print("Failed to load state_dict:", e)
-	else:
-		print("Model file not found at:", MODEL_PATH)
-	model.eval()
-	return model
-
+MODELTYPE = "DNN" #模型类型，DNN或CNN，需与训练时一致
 
 def nparr_to_tensor(img28):
 	# img28: 28x28 uint8, 0..255, background 0, stroke 255
@@ -78,8 +29,8 @@ def run_pygame():
 	screen = pygame.display.set_mode((WIN_W, WIN_H))
 	pygame.display.set_caption("MNIST 手写绘制与检测")
 
-	font = pygame.font.Font("pytorch文档\MNIST-test\msyh.ttc", 20)
-	bigfont = pygame.font.Font("pytorch文档\MNIST-test\msyh.ttc", 28)
+	font = pygame.font.Font("tool\MNIST-test\msyh.ttc", 20)
+	bigfont = pygame.font.Font("tool\MNIST-test\msyh.ttc", 28)
 
 	# 网格数据：0 黑背景，255 白笔画
 	grid = np.zeros((GRID, GRID), dtype=np.uint8)
@@ -120,7 +71,7 @@ def run_pygame():
 					grid[y, x] = int(grid[y, x] * (1.0 - factor))
 
 	device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-	model = load_model(device)
+	model = load_model(device,"DNN")
 
 	probs = None
 
@@ -216,7 +167,7 @@ def run_pygame():
 
 		# 显示缩略图和数值
 		thumb = pygame.transform.scale(scaled, (140, 140))
-		screen.blit(thumb, (ui_x + 200, 20))
+		screen.blit(thumb, (ui_x + 200, 80))
 
 		# 若有概率结果，绘制条形图（增加每项间距以防挤在一起）
 		if probs is not None:
@@ -225,7 +176,7 @@ def run_pygame():
 			screen.blit(title, (ui_x + 20, 140))
 			# 绘制每个数字的条
 			max_w = INFO_WIDTH - 120
-			prob_start_y = 180
+			prob_start_y = 230
 			prob_spacing = 26  # 间距增大
 			for i, p in enumerate(probs):
 				by = prob_start_y + i * prob_spacing
@@ -240,14 +191,14 @@ def run_pygame():
 
 		# 显示当前画笔灰度强度
 		inten_label = font.render(f'强度: {brush_intensity}', True, (220, 220, 220))
-		screen.blit(inten_label, (ui_x + 20, WIN_H - 70))
+		screen.blit(inten_label, (ui_x + 20, WIN_H - 60))
 		# 显示灰度色块
-		sw_x, sw_y, sw_w, sw_h = ui_x + 100, WIN_H - 78, 40, 24
+		sw_x, sw_y, sw_w, sw_h = ui_x + 150, WIN_H - 60, 40, 24
 		val = int(brush_intensity)
 		pygame.draw.rect(screen, (val, val, val), (sw_x, sw_y, sw_w, sw_h))
 		# 显示画笔半径
-		radius_label = font.render(f'半径: {brush_radius}', True, (220, 220, 220))
-		screen.blit(radius_label, (ui_x + 20, WIN_H - 100))
+		#radius_label = font.render(f'半径: {brush_radius}', True, (220, 220, 220))
+		#screen.blit(radius_label, (ui_x + 20, WIN_H - 100))
 
 		# 显示说明
 		hint = font.render('工具: 点击对应按钮切换，拖动绘制', True, (200, 200, 200))
