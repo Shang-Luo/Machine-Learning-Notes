@@ -1,5 +1,5 @@
 # Machine-Learning-Notes
-**注意**：`data/`存储的已经下载的数据集太大，我用`.gitignore`屏蔽了，首次运行代码时会**重新下载**，可能比较慢
+**注意**：`data/`存储的已经下载的数据集太大，我用`.gitignore`屏蔽了**除了data/models的文件**，首次运行代码时数据集会**重新下载**，可能比较慢
 ### 笔记目录
 ```
 Machine-Learning-Notes/
