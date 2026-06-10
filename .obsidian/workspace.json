@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "机器学习李宏毅/机器学习基本概念.md",
+                "file": "机器学习李宏毅/自注意力机制（self-attention）.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "机器学习基本概念"
+              "title": "自注意力机制（self-attention）"
             }
           }
         ]
@@ -155,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "机器学习李宏毅/机器学习基本概念.md",
+                "file": "机器学习李宏毅/自注意力机制（self-attention）.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "机器学习基本概念 的大纲"
+              "title": "自注意力机制（self-attention） 的大纲"
             }
           }
         ],
@@ -169,7 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 294.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,12 +184,22 @@
   },
   "active": "2caa155c1aa19978",
   "lastOpenFiles": [
+    "_img/A0000/A0000-0025.png",
+    "_img/A0000/A0000-0025.png.crdownload",
+    "_img/A0000/A0000-0024.png",
+    "_img/A0000/A0000-0024.png.crdownload",
+    "_img/A0000/A0000-0023.png",
+    "_img/A0000/A0000-0023.png.crdownload",
+    "_img/A0000/A0000-0022.png",
+    "_img/A0000/A0000-0022.png.crdownload",
+    "机器学习李宏毅/机器学习基本概念.md",
+    "机器学习李宏毅/自注意力机制（self-attention）.md",
+    "机器学习李宏毅/前向传播和反向传播.md",
+    "机器学习李宏毅/CNN 卷积神经网络.md",
     "机器学习李宏毅/数据和模型如何影响过拟合的概率及减小方案.md",
     "机器学习李宏毅/数据集和过拟合.md",
-    "机器学习李宏毅/机器学习基本概念.md",
     "为什么使用了验证集还是过拟合？.md",
     "机器学习李宏毅/正则化与早停.md",
-    "机器学习李宏毅/前向传播和反向传播.md",
     "愿望单.md",
     "_img/A0000/A0000-0021.png",
     "README.md",
@@ -198,7 +208,6 @@
     "data/models/model-CNN.pth",
     "pytorch文档/CNN.py",
     "pytorch文档/optimizer 优化器.md",
-    "机器学习李宏毅/CNN 卷积神经网络.md",
     "data/models/model-DNN.pth",
     "tool/MNIST-test/__pycache__/model.cpython-313.pyc",
     "tool/MNIST-test/__pycache__",
@@ -212,14 +221,7 @@
     "Pasted image 20260603170336.png",
     "Pasted image 20260603172732.png",
     "_img/A0000/A0000-0019.png",
-    "_img/A0000/A0000-0018.png",
-    "_img/A0000/A0000-0017.png",
-    "_img/A0000/A0000-0016.png",
-    "_img/A0000/A0000-0015.png.crdownload",
-    "_img/A0000/A0000-0014.png.crdownload",
     "机器学习李宏毅/ADAM.md",
-    "机器学习李宏毅/Batch.md",
-    "_img/A0000/A0000-0013.png.crdownload",
-    "_img/A0000/A0000-0012.png.crdownload"
+    "机器学习李宏毅/Batch.md"
   ]
 }

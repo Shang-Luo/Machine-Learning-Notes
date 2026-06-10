@@ -71,7 +71,7 @@ def run_pygame():
 					grid[y, x] = int(grid[y, x] * (1.0 - factor))
 
 	device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-	model = load_model(device,"DNN")
+	model = load_model(device, MODELTYPE)
 
 	probs = None
 
